@@ -11,7 +11,6 @@ Param(
 		[Parameter(Mandatory=$true)]
 		[string]$report
 	)
-#This is Version 2.0
 #functions for formatting and logging
 function Write-Status ($message) {Write-Host ("[$(get-date -Format 'HH:mm:ss')] $message.").PadRight(75) -NoNewline -ForegroundColor Yellow }
 function Update-Status ($status = "Success") {Write-Host "[$status]" -ForegroundColor Green}
